@@ -4,14 +4,31 @@ html, body {
         padding: 0;
       }
 
+
+      /* 
+			background color container: EBEBD3
+			font color: 333
+			hover active background-color: EBEBD3
+			hover active color: white 
+			hover nav color: CDD6D0
+
+			accent color questionmark: 6BBAEC
+       */
+
 body {
-	background-color: #333;
+	background-color: #EBEBD3;
 	color: white;
 }
 
 #container {
-	display: flex;
-	justify-content: center;
+	width: 80%;
+}
+
+header {
+	position: fixed;
+	height: 100vh;
+	width: 20%;
+	background-color: white;
 }
 
 ul {
@@ -22,16 +39,24 @@ ul {
 
 li a {
 	display: block;
-	width: 300px;
 	background-color: white;
-	padding: 16px 20px;
+	padding: 10px 20px;
+	color: #333;
+	text-decoration: none;
+	font-size: 1em;
 }
 
 a {
-	color: #333;
+	color: red;
 }
 
 li a.active {
-    background-color: gray;
+    background-color: #EBEBD3;
     color: white;
+    font-weight: bold;
+}
+
+li a:hover:not(.active) {
+    background-color: #CDD6D0;
+    color: #333;
 }
